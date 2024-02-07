@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fe785f03de.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div class="login-container">
+             <div class="img-box"><img class="img" src="https://img.freepik.com/free-vector/forgot-password-concept-illustration_114360-1123.jpg?size=626&ext=jpg&ga=GA1.1.79325922.1675148157&semt=ais" alt="This is image">
+             <a href="#" id="cre-acc">Create an account</a></div>
+             
+             <div class="login-box">
+                <h1>Log In</h1>
+                <div class="user-inputs">
+                <i class="fa-solid fa-envelope" style="position: relative; top: 4rem; left: 3%; font-size:larger ;"></i>
+                <input type="email" required id="email" placeholder="Email">
+                <div class="pass">
+                    <i class="fa-solid fa-lock"style="position: relative; left:3%; z-index: 1; font-size:larger ;"></i>
+                <input type="password" required id="password" placeholder="Password" minlength="8" maxlength="10"><button id="eye" onclick="show_hide();" style="position: relative;  z-index: 5;left: -3vw; top: 0.2rem; font-size: large; background-color: white;border: none; "><i class="fa-solid fa-eye-slash"></i></i></button></div>
+               <div class="check"> <input type="checkbox" id="ckbox"> <label for="ckbox">Remeber me</label></div></div>
+                <button class="login-btn">Login</button>
+                <div class="footer">                <p>Or Login with</p>
+                <div class="icons">
+              <a href="#">  <i class="fa-brands fa-square-facebook" id="icons"></i></a>
+              <a href="#">                 <i class="fa-brands fa-square-google-plus" id="icons"></i></a>
+               <a href="#"> <i class="fa-brands fa-square-twitter" id="icons"></i></a>
+               </div>
+            </div>
+        </div>
+
+        </div>   
+        <script>
+            // Added functionality for eye button and password field
+            let cleye=document.querySelector("#eye");
+            let password=document.querySelector("#password");
+            let login_btn=document.querySelector(".login-btn");
+            let type = password.getAttribute("type") === "password" ? "text" : "password";
+        let count=0;
+        function show_hide(){
+            if(count==0 && type==="password"){
+                cleye.innerHTML = '<i class="fa-solid fa-eye-slash"></i>';
+            password.setAttribute("type", type);
+            type="text";
+                count=1;
+            }
+            else{
+                cleye.innerHTML = '<i class="fa-solid fa-eye" id="eye" ></i>';
+                password.setAttribute("type", type);
+                type="password";
+                count=0;
+            }
+        };
+        
+        </script>
+</body>
+</html>

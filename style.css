@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: open sans;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.login-container{
+  height: 85vh;
+  width: 70vw;
+   display: flex;   
+   justify-content: center;
+   align-items: center;
+   border-radius: 30px;
+   position: fixed;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.login-container .img-box
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 0.2rem;
+ 
+}
+.img-box .img{
+    height: 83vh;
+    position: relative;
+    top: 0.6rem;
+    border-radius: 30px;
+
+}
+.img-box a{
+    color: black;
+    position: relative;
+    top: -3rem;
+    position: f;
+
+    text-decoration: none;
+}
+#cre-acc:hover{
+ color: blue;
+ border-bottom:1px solid blue ;
+}
+/* styling login box */
+.login-box h1{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 2rem;
+}
+.login-box{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   height: 85vh;
+   width: 30rem;
+   gap:2rem;
+   padding: 20px;
+   padding-top: 30px;
+}
+.login-box #commonid{
+    font-size:large;
+    font-weight: bold;
+}
+.login-box input[type=email],input[type=password] {
+
+   height: 3rem;
+   width:20vw;
+   font-size: larger;
+   border:none;
+   border-bottom:2px solid black;
+   padding-left: 40px;
+   margin-bottom: 3vh;
+   outline: none;
+}
+.login-box input[type="text"]{
+    height: 3rem;
+    width:20vw;
+    font-size: larger;
+    border:none;
+    border-bottom:2px solid black;
+    padding-left: 40px;
+    margin-bottom: 3vh;
+    outline: none;
+    position: relative;
+    left: -1.3rem;
+}
+.user-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 3rem;
+}
+input[type=password]{
+    position: relative;
+    left: -1.3rem;
+}
+.check{
+display: flex;
+position: relative;
+top: -2rem;
+gap: 1rem;
+}
+.login-btn{
+    height: 3rem;
+      width:20vw;
+    position: relative;
+    top: -2rem;
+    font-size:x-large;
+    background-color: #64a5ff;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-weight:bolder ;
+    border-radius:10px ;
+    cursor: pointer;
+    left: 4vw;
+    /* transform: translateX(-50%); */
+}
+.login-btn:hover{
+    background-color: #007dfe;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+}
+#icons{
+    font-size: xx-large;
+   margin: 10px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.icons a{
+    text-decoration: none;
+    color: black;
+}
+
+::placeholder{
+    border: none;
+}
